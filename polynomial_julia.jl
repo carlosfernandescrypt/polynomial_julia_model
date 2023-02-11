@@ -20,7 +20,7 @@ function mean_squared_error(y_true, y_pred)
     return mean((y_true - y_pred) .^ 2)
 end
 
-# Generate toy data
+#### generate toy data
 x = range(0, stop=10, length=100)
 y = sin.(2 * pi * x) + randn(length(x)) * 0.1
 
